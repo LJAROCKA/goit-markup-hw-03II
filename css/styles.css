@@ -1,3 +1,12 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 :root {
 --color-text: #434455;
 --color-background-header: #E7E9FC;
@@ -12,14 +21,34 @@ body {
     color: var(--color-text);
     background-color: var(--color-buttom-first);
 }
+.wrapper {
+  }
+
+.top-container {
+    max-width: 1440px;
+    height: 72px;
+    background-color: var(--color-buttom-first);
+    border: 1px solid var(--color-background-header);
+    display: flex;
+    padding-top: 24px;
+
+}
+
 .navigation {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--color-background-team);
-    text-decoration: none;}
-    
+    color: var(--color-background-team); 
+    text-decoration: none;
+
+}
+.navigation-menu {
+width: 261px;
+gap: 40px;
+margin-left: 232px;
+}
+
 .contact {
     color: var(--color-text);
     text-decoration: none;
@@ -28,7 +57,15 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-} 
+}
+.contact-mail {
+width: 153px;
+margin-left: 332px;
+}
+.contact-tel {
+width: 151px;
+margin-left: 40px;
+}
 .navigation:hover {
     color:var(--color-button-nav);
     cursor: pointer;
@@ -44,12 +81,15 @@ body {
     color: var(--color-button-nav);
 }
 .first-order {
-    color:var(--color-buttom-first); 
+    color: var(--color-buttom-first); 
     line-height: 1.07;
     font-weight: 700;
     font-size: 56px;
     letter-spacing: 0.02em;
     text-align: center;
+    width: 496px;
+    padding-top: 188px;
+    margin-left: 472px;
 }
 .service-fields {
     color: var(--color-background-team);
@@ -59,6 +99,10 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
+    display: flex;
+    width: 323px;
+    margin: 120px 559px 72px 559px;
+    
 }
 .contact-menu .service .team-members .service-navigation-menu .list {
     list-style: none;}
@@ -69,13 +113,17 @@ body {
     line-height: 1.2;
     font-weight: 500;
     letter-spacing: 0.02em;
+    padding-bottom: 8px;
+    
 }
 .section-order{
     color: var(--color-buttom-first);
-    background-color: var(--color-button);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    width: 1440px;
+    height: 600px;
+    background-color: var(--color-background-team);
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -86,6 +134,10 @@ body {
     line-height: 1.17;
     font-weight: 800;
     letter-spacing: 0.03em;
+    width: 115px;
+    height: 24px;
+    padding-left: 156px;
+  
 }
 .logo .logo-highlight {
     color:var(--color-background-team);
@@ -99,9 +151,6 @@ body {
 .section-team {
     background-color:var(--color-logo);
 }
-.section-order {
-    background-color: var(--color-background-team);
-}
 .order-button {
     font-family: "Roboto", sans-serif;
     background-color: var(--color-button);
@@ -111,10 +160,14 @@ body {
     font-weight: 500;
     letter-spacing: 0.04em;
     cursor: pointer;
+    width: 169px;
+    height: 56px;
+    margin-left: 636px;
+    margin-top: 48px;
+    border-radius: 4px;
 }
 .order-button:hover {
     background-color: var(--color-button-nav);
-    color: var(--color-button);
     cursor: pointer;
 }
 .order-button:focus {
@@ -152,9 +205,11 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-text);
+    font-weight: 400;
 }
 .link {
     text-decoration: none;
+    
 }
 .person {
     background-color: var(--color-buttom-first);
@@ -164,4 +219,35 @@ body {
 }
 .list {
     list-style-type: none;
+    display: flex;
+}
+.description-none {
+    display: none;
+}
+.description-list {
+    display: flex;
+    max-width: 1440px;
+    margin-top: 120px;
+    padding-left: 156px;
+    padding-right: 156px;
+    gap: 24px;
+    max-height: 104px;
+    }
+.description-list .text {height: 72px;
+flex-direction: row;}
+
+
+.service {
+    display: flex;
+        max-width: 1440px;
+        padding-left: 156px;
+        padding-right: 156px;
+        gap: 24px;
+        max-height: 412px;
+}
+.service-options {
+    display: block;
+    gap: 24px;
+    max-width: 1128px;
+        flex-direction: row;
 }

@@ -51,8 +51,12 @@ body {
     padding-top: 24px;
     padding-bottom: 24px;
     justify-content: center;
+    margin: 0 auto;
+    padding: 0 15px;
 }
-.top {border-bottom: 1px solid var(--color-background-header);}
+.top {
+    border-bottom: 1px solid var(--color-background-header);
+}
 .full-navigation {
     display: flex;
     align-items: center;
@@ -130,7 +134,6 @@ width: 151px;
     letter-spacing: 0.02em;
     text-align: center;
     width: 323px;
-    padding-top: 120px;
     margin-bottom: 72px;
 }
 .contact-menu .service .team-members .service-navigation-menu .list {
@@ -178,15 +181,15 @@ width: 151px;
     background-color:var(--color-background-team);}
 .page-footer {
     padding-top: 100px;
-    padding-bottom: 100px;
     padding-left: 156px;
 display: inline-block;}
-.page-footer .page-end {
-width: 264px;
-padding-top: 16px;
-}
 .goals {
     padding: 120px 0;
+}
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+    width: 1128px;
 }
 .section-team {
     background-color:var(--color-logo);
@@ -201,10 +204,10 @@ padding-top: 16px;
     font-weight: 500;
     letter-spacing: 0.04em;
     cursor: pointer;
-    max-width: 169px;
     height: 56px;
     display: block;
     margin: 0 auto;
+    min-width: 169px,
 }
 .order-button:hover {
     background-color: var(--color-button-nav);
@@ -228,11 +231,16 @@ padding-top: 16px;
 .service-navigation:hover {
     background-color:var(--color-button-nav);
     color: var(--color-buttom-first);
+    border: 1px solid transparent;
 }
 .service-navigation:focus {
     background-color: var(--color-button-nav);
     color: var(--color-buttom-first);
-
+    border: 1px solid transparent;
+}
+.page-footer .link {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .page-end {
     color:var(--color-logo);
@@ -240,6 +248,9 @@ padding-top: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 100px 0;
+    width: 264px;
+    padding-top: 16px;
 }
 .text {
     font-size: 16px;
@@ -289,11 +300,12 @@ padding-top: 16px;
     width: 1128px;
     flex-wrap: wrap;
     gap: 24px;
-    
+}
+.description-list {
+    gap: 24px;
 }
 .description-box {
     flex-basis: calc((100% - 72px) / 4);
-   
 }
 .mision {
     padding-top: 120px;
@@ -307,9 +319,10 @@ padding-top: 16px;
 .service-options {
     display: block;
     height: auto;
-    padding-bottom: 120px;
     width: calc((100% - 48px) / 3);
 }
+.team {
+    padding: 120px 0;}
 .team-members {
  display: flex;
  padding-left: 156px;
@@ -322,18 +335,18 @@ padding-bottom: 120px;}
     margin: auto;
     gap: 24px;
     justify-content: center;
-    padding-top: 96px;
-    padding-bottom: 72px;
  }
-.services {
-width: 1128px;
-padding-bottom: 48px;
+.service-navigation-menu .service-navigation {
+ border: 1px solid var(--color-background-header);
+ padding: 12px 24px;
 }
 .service-carts {
     column-gap: 24px;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 48px;}
+    row-gap: 48px;
+    width: 1128px;}
+
 .item {
     flex-basis: calc((100% - 48px) / 3);
     }

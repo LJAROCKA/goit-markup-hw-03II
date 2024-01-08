@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
 }
-
 img {
     display: block;
     max-width: 100%;
@@ -39,20 +38,19 @@ body {
     justify-content: center;
 }
 .container {
-    width: 1440px;
+    width: 1128px; 
+    padding: 0 auto;
     margin: 0 auto;
+    justify-content: center;
 }
-
 .top-container {
-    width: 1440px;
     background-color: var(--color-buttom-first);
     border-bottom: 1px solid var(--color-background-header);
     display: flex;
-    padding-top: 24px;
-    justify-content: space-around;
     align-items: baseline;
-    padding: 24px 156px;
-   
+    padding-top: 24px;
+    padding-bottom: 24px;
+    justify-content: center;
 }
 .navigation {
     font-size: 16px;
@@ -66,9 +64,9 @@ body {
 .navigation-menu {
 width: 261px;
 gap: 40px;
-
+padding-left: 76px;
+padding-right: 332px;
 }
-
 .contact {
     color: var(--color-text);
     text-decoration: none;
@@ -80,6 +78,7 @@ gap: 40px;
 }
 .contact-mail {
 width: 153px;
+
 }
 .contact-tel {
 width: 151px;
@@ -107,8 +106,9 @@ padding-left: 40px;
     letter-spacing: 0.02em;
     text-align: center;
     width: 496px;
-    padding-top: 188px;
-    
+   padding-top: 188px; 
+   padding-bottom: 48px;
+   margin: auto;
 }
 .service-fields {
     color: var(--color-background-team);
@@ -116,10 +116,11 @@ padding-left: 40px;
     line-height: 1.11;
     font-weight: 700;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
     text-align: center;
-    display: flex;
     width: 323px;
+    margin: auto;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 .contact-menu .service .team-members .service-navigation-menu .list {
     list-style: none;}
@@ -131,16 +132,14 @@ padding-left: 40px;
     font-weight: 500;
     letter-spacing: 0.02em;
     padding-bottom: 8px;
-    
 }
 .section-order{
-    display: flex;
     color: var(--color-buttom-first);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     background-color: var(--color-background-team);
-    justify-content: center;
+   padding-bottom: 244px;
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -165,6 +164,7 @@ padding-left: 40px;
 }
 .section-team {
     background-color:var(--color-logo);
+    padding: 0;
 }
 .order-button {
     font-family: "Roboto", sans-serif;
@@ -176,8 +176,9 @@ padding-left: 40px;
     letter-spacing: 0.04em;
     cursor: pointer;
     width: 169px;
-   
-    border-radius: 4px;
+    height: 56px;
+    display: block;
+    margin: 0 auto;
 }
 .order-button:hover {
     background-color: var(--color-button-nav);
@@ -222,13 +223,12 @@ padding-left: 40px;
 }
 .link {
     text-decoration: none;
-    
 }
 .person {
     background-color: var(--color-buttom-first);
     display: block;
-    max-width: 100%;
     height: auto;
+padding: 0px 0px 32px 0px;
 }
 .contact-header {
     font-style: normal;
@@ -249,40 +249,44 @@ padding-left: 40px;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.description-list {
+.description-list .list {
     display: flex;
-    max-width: 1440px;
-   
-    padding-left: 156px;
-    padding-right: 156px;
+    width: 1128px;
+    padding-top: 120px;
     gap: 24px;
-    max-height: 104px;
-    }
-.description-list .text {height: 72px;
-flex-direction: row;}
-
-
+}
+.description-box {
+    flex-basis: calc((100% - 264px) / 4);
+}
+.description-box .text {
+    margin: 0;
+    
+}
 .service {
     display: flex;
-    max-width: 1440px;
     padding-left: 156px;
     padding-right: 156px;
     gap: 24px;
-    
 }
 .service-options {
     display: block;
-    max-width: 100%;
     height: auto;
+    padding-bottom: 120px;
 }
-.team-members list {
+.team-members .list {
 display: block;
-max-width: 100%;
 height: auto;
 }
 .team-members {
  display: flex;
- max-width: 1440px;
  padding-left: 156px;
  padding-right: 156px;
  gap: 24px;}
+
+.service-navigation-menu {
+    width: 586px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 24px;
+ }
+ 

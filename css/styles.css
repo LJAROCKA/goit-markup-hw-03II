@@ -186,7 +186,7 @@ display: inline-block;}
 .goals {
     padding: 120px 0;
 }
-.portfolio {
+.company-portfolio {
     padding-top: 96px;
     padding-bottom: 120px;
     width: 1128px;
@@ -207,7 +207,7 @@ display: inline-block;}
     height: 56px;
     display: block;
     margin: 0 auto;
-    min-width: 169px,
+    min-width: 169px;
 }
 .order-button:hover {
     background-color: var(--color-button-nav);

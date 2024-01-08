@@ -6,7 +6,21 @@
     padding: 0;
 }
 
-
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
 :root {
 --color-text: #434455;
 --color-background-header: #E7E9FC;
@@ -22,18 +36,24 @@ body {
     background-color: var(--color-buttom-first);
 }
 .wrapper {
-  }
-
-.top-container {
-    max-width: 1440px;
-    height: 72px;
-    background-color: var(--color-buttom-first);
-    border: 1px solid var(--color-background-header);
-    display: flex;
-    padding-top: 24px;
-
+    justify-content: center;
+}
+.container {
+    width: 1440px;
+    margin: 0 auto;
 }
 
+.top-container {
+    width: 1440px;
+    background-color: var(--color-buttom-first);
+    border-bottom: 1px solid var(--color-background-header);
+    display: flex;
+    padding-top: 24px;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 24px 156px;
+   
+}
 .navigation {
     font-size: 16px;
     font-weight: 500;
@@ -41,12 +61,12 @@ body {
     letter-spacing: 0.02em;
     color: var(--color-background-team); 
     text-decoration: none;
-
+    display: block;
 }
 .navigation-menu {
 width: 261px;
 gap: 40px;
-margin-left: 232px;
+
 }
 
 .contact {
@@ -60,11 +80,10 @@ margin-left: 232px;
 }
 .contact-mail {
 width: 153px;
-margin-left: 332px;
 }
 .contact-tel {
 width: 151px;
-margin-left: 40px;
+padding-left: 40px;
 }
 .navigation:hover {
     color:var(--color-button-nav);
@@ -89,7 +108,7 @@ margin-left: 40px;
     text-align: center;
     width: 496px;
     padding-top: 188px;
-    margin-left: 472px;
+    
 }
 .service-fields {
     color: var(--color-background-team);
@@ -101,8 +120,6 @@ margin-left: 40px;
     text-align: center;
     display: flex;
     width: 323px;
-    margin: 120px 559px 72px 559px;
-    
 }
 .contact-menu .service .team-members .service-navigation-menu .list {
     list-style: none;}
@@ -117,13 +134,13 @@ margin-left: 40px;
     
 }
 .section-order{
+    display: flex;
     color: var(--color-buttom-first);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    width: 1440px;
-    height: 600px;
     background-color: var(--color-background-team);
+    justify-content: center;
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -135,12 +152,10 @@ margin-left: 40px;
     font-weight: 800;
     letter-spacing: 0.03em;
     width: 115px;
-    height: 24px;
-    padding-left: 156px;
-  
 }
 .logo .logo-highlight {
     color:var(--color-background-team);
+    
 }
 .studio-highlight {
     color: var(--color-logo);
@@ -161,9 +176,7 @@ margin-left: 40px;
     letter-spacing: 0.04em;
     cursor: pointer;
     width: 169px;
-    height: 56px;
-    margin-left: 636px;
-    margin-top: 48px;
+   
     border-radius: 4px;
 }
 .order-button:hover {
@@ -213,6 +226,9 @@ margin-left: 40px;
 }
 .person {
     background-color: var(--color-buttom-first);
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .contact-header {
     font-style: normal;
@@ -221,13 +237,22 @@ margin-left: 40px;
     list-style-type: none;
     display: flex;
 }
-.description-none {
-    display: none;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .description-list {
     display: flex;
     max-width: 1440px;
-    margin-top: 120px;
+   
     padding-left: 156px;
     padding-right: 156px;
     gap: 24px;
@@ -239,15 +264,25 @@ flex-direction: row;}
 
 .service {
     display: flex;
-        max-width: 1440px;
-        padding-left: 156px;
-        padding-right: 156px;
-        gap: 24px;
-        max-height: 412px;
+    max-width: 1440px;
+    padding-left: 156px;
+    padding-right: 156px;
+    gap: 24px;
+    
 }
 .service-options {
     display: block;
-    gap: 24px;
-    max-width: 1128px;
-        flex-direction: row;
+    max-width: 100%;
+    height: auto;
 }
+.team-members list {
+display: block;
+max-width: 100%;
+height: auto;
+}
+.team-members {
+ display: flex;
+ max-width: 1440px;
+ padding-left: 156px;
+ padding-right: 156px;
+ gap: 24px;}

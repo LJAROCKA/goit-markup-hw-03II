@@ -175,11 +175,12 @@ width: 151px;
 .studio-highlight {
     color: var(--color-logo);
 }
-.edn-section {
-    background-color:var(--color-background-team);
-width: 1158px;}
+.end-section {
+background-color:var(--color-background-team);
+width: 1158px;
+padding: 100px 0;
+margin: 0 auto;}
 .page-footer {
-    padding-top: 100px;
     padding-left: 156px;
     display: inline-block;}
 .goals {
@@ -247,7 +248,6 @@ width: 1158px;}
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 100px 0;
     width: 264px;
     padding-top: 16px;
 }
@@ -322,7 +322,8 @@ width: 1158px;}
     width: calc((100% - 48px) / 3);
 }
 .team {
-    padding: 120px 0;}
+    padding: 120px 0;
+}
 .team-members {
  display: flex;
  padding-left: 156px;
@@ -345,22 +346,17 @@ padding-bottom: 120px;}
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
-    width: 1128px;}
+    width: 1128px;
+margin-bottom: 72px}
 
 .item {
-    flex-basis: calc((100% - 48px) / 3);
+    width: calc((100% - 48px) / 3);
+    
     }
-.item .description-name {
+.item-name {
+    padding: 32px 16px;
     border: 1px solid var(--color-background-header);
-    border-style: none solid none solid;
-    padding-left: 16px;
-    padding-bottom: 8px;
-    padding-top: 32px;
+    border-top: none;
+    margin-bottom: 8px;
+
 }
-.item .text {
-    border: 1px solid var(--color-background-header);
-    border-style: none solid solid solid;
-    padding-left: 16px;
-    padding-bottom: 32px;
-    padding-top: 8px;
-}    

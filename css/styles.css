@@ -144,7 +144,7 @@ width: 151px;
     text-align: center;
     width: 323px;
     margin-bottom: 72px;
-    display: inline-block;
+
 }
 .contact-menu .service .team-members .service-navigation-menu .list {
     list-style: none;}
@@ -194,7 +194,6 @@ margin: 0 auto;}
 }
 .section-team {
     background-color:var(--color-logo);
-    margin: auto;
 }
 .order-button {
     font-family: "Roboto", sans-serif;
@@ -317,6 +316,7 @@ margin: 0 auto;}
 }
 .team {
     padding: 120px 0;
+    
 }
 .team-members {
 display: flex;

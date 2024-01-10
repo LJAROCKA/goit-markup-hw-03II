@@ -50,9 +50,6 @@ body {
     align-items: baseline;
     padding-top: 24px;
     padding-bottom: 24px;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0 15px;
 }
 .top {
     border-bottom: 1px solid var(--color-background-header);
@@ -146,6 +143,7 @@ width: 151px;
     font-weight: 500;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    text-align: center; 
 }
 .company-services {
     padding-bottom: 120px;
@@ -178,11 +176,12 @@ width: 151px;
     color: var(--color-logo);
 }
 .edn-section {
-    background-color:var(--color-background-team);}
+    background-color:var(--color-background-team);
+width: 1158px;}
 .page-footer {
     padding-top: 100px;
     padding-left: 156px;
-display: inline-block;}
+    display: inline-block;}
 .goals {
     padding: 120px 0;
 }
@@ -266,12 +265,14 @@ display: inline-block;}
     background-color: var(--color-buttom-first);
     display: block;
     height: auto;
-    padding: 0px 0px 32px 0px;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+.person-details {
+    padding: 32px 0px;
 }
 .person .description-name {
     text-align: center;
-    padding-top: 32px;
-    padding-bottom: 8px;
 }
 .person .text {
     text-align: center;
@@ -318,7 +319,6 @@ display: inline-block;}
 }
 .service-options {
     display: block;
-    height: auto;
     width: calc((100% - 48px) / 3);
 }
 .team {

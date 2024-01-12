@@ -41,16 +41,13 @@ body {
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-    justify-content: center;
 }
 .top-container {
     background-color: var(--color-buttom-first);
     display: flex;
     align-items: baseline;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin: 0 auto;
     padding: 0 15px;
+    justify-content: space-between;
 }
 .top {
     border-bottom: 1px solid var(--color-background-header);

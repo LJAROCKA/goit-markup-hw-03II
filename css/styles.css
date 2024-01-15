@@ -46,8 +46,7 @@ body {
     background-color: var(--color-buttom-first);
     display: flex;
     align-items: baseline;
-    padding: 0 15px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .top {
     border-bottom: 1px solid var(--color-background-header);

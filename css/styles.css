@@ -44,6 +44,7 @@ body {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
+    margin: 0 auto;
 }
 .top {
     border-bottom: 1px solid var(--color-background-header);
@@ -103,6 +104,7 @@ width: 151px;
 .first-order-section {
     padding: 188px 0;
     background-color: var(--color-background-team);
+    margin: 0 auto;
 }
 .first-order {
     color: var(--color-buttom-first); 
@@ -130,7 +132,6 @@ width: 151px;
     text-align: center;
     width: 323px;
     margin-bottom: 72px;
-
 }
 .contact-menu .service .team-members .service-navigation-menu .list {
     list-style: none;}
@@ -297,11 +298,13 @@ padding: 100px 0;
 }
 .service-options {
     display: block;
-    width: calc((100% - 48px) / 3);
+    width: calc((100% - 48px) / 3);}
+    
+.service {
+    gap: 24px;
 }
 .team {
     padding: 120px 0;
-    
 }
 .team-members {
 display: flex;

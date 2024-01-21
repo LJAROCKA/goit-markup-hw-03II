@@ -48,7 +48,6 @@ body {
 }
 .top {
     border-bottom: 1px solid var(--color-background-header);
-    margin: 0 auto;
 }
 .navigation {
     font-size: 16px;

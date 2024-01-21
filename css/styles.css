@@ -247,6 +247,10 @@ padding: 100px 0;
 .link {
     text-decoration: none;
 }
+.page-end .link {
+    margin-bottom: 16px;
+    display: inline-block;
+}
 .person {
     background-color: var(--color-buttom-first);
     display: block;

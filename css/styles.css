@@ -174,17 +174,13 @@ gap: 24px;
 background-color:var(--color-background-team);
 padding: 100px 0;
 }
-.page-footer {
-    padding-left: 156px;}
 .goals {
-    
     padding: 120px 0;
 }
 .company-portfolio {
     padding-top: 96px;
     padding-bottom: 120px;
 }
-
 .order-button {
     font-family: "Roboto", sans-serif;
     background-color: var(--color-button);
@@ -248,7 +244,7 @@ padding: 100px 0;
 .link {
     text-decoration: none;
 }
-.page-end .link {
+footer .link {
     margin-bottom: 16px;
     display: inline-block;
 }
@@ -256,10 +252,10 @@ padding: 100px 0;
     background-color: var(--color-buttom-first);
     display: block;
     height: auto;
-    border-radius: 0px 0px 4px 4px;
 }
 .team-members .person {
 width: calc((100% - 72px) / 4);
+border-radius: 0px 0px 4px 4px;
 }
 .person-details {
     padding: 32px 0px;
@@ -303,31 +299,27 @@ width: calc((100% - 72px) / 4);
 .goals {
     padding: 120px 0;
 }
-.service-options {
+.services.service-options {
     width: calc((100% - 48px) / 3);
+    border-radius: 0px 0px 4px 4px;
 }   
 .services {
 display: flex;
-padding: 0 156px;
 gap: 24px;
 }
-.mision {}
 .team {
     padding: 120px 0;
     background-color: var(--color-logo);
 }
 .team-members {
 display: flex;
-padding-right: 156px;
 gap: 24px;
-padding: 0 156px;}
-
+}
 .service-navigation-menu {
     gap: 24px;
     justify-content: center;
     margin-bottom: 72px;
- }
-
+}
 .service-carts {
     column-gap: 24px;
     display: flex;

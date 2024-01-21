@@ -256,8 +256,10 @@ padding: 100px 0;
     background-color: var(--color-buttom-first);
     display: block;
     height: auto;
-    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+}
+.team-members .person {
+width: calc((100% - 72px) / 4);
 }
 .person-details {
     padding: 32px 0px;

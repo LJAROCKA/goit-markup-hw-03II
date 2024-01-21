@@ -147,6 +147,10 @@ width: 151px;
 .company-services {
     padding-bottom: 120px; 
 }
+.services {
+display: flex;
+gap: 24px;
+}
 .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -289,6 +293,7 @@ padding: 100px 0;
 .description-list .list {
     display: flex;
     flex-wrap: wrap;
+   
 }
 .description-list {
     gap: 24px;
@@ -303,9 +308,12 @@ padding: 100px 0;
     display: block;
     width: calc((100% - 48px) / 3);}
     
-.service {
-    gap: 24px;
+.services {
+display: flex;
+padding: 0 156px;
+gap: 24px;
 }
+.mision {}
 .team {
     padding: 120px 0;
 }
